@@ -1,0 +1,349 @@
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/** LAYOUT ========================= **/
+
+body {
+	font-family: "helvetica neue", helvetica, arial, sans-serif;
+	background: #eee;
+	padding-top: 20px;
+	font-size: 14px;
+}
+
+#page {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+#header {
+	padding-bottom: 10px;
+}
+
+#main {
+	background: #fff;
+	padding: 20px;
+	border: solid #ccc 1px;
+	box-shadow: 0 0 6px #ccc;
+}
+
+.left {
+	float: left;
+}
+
+/** TYPOGRAPHY ========================= **/
+
+a {
+	color: #2361d3;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+.actions {
+	margin-bottom: 15px;
+}
+
+.actions li {
+	margin-left: 20px;
+}
+
+.actions a {
+	color: #309FDB;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.actions a:hover {
+	text-decoration: underline;
+}
+
+/** MESSAGES ========================= **/
+
+.messages {
+	color: green;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+/** FORMS ========================= **/
+
+form .row {
+	margin-bottom: 15px;
+}
+
+form .hint {
+	color: #999;
+	font-size: 12px;
+	padding-top: 5px;
+}
+
+.errorMessage {
+	color: #f00;
+	padding-top: 5px;
+}
+
+label {
+	display: block;
+	padding-bottom: 3px;
+	font-size: 14px;
+}
+
+label span {
+	color: #f00;
+}
+
+.checkbox label {
+	display: inline;
+}
+
+form input[type="text"],
+form input[type="password"],
+textarea {
+	border: solid #ccc 1px;
+	padding: 7px;
+	font-family: Arial;
+	font-size: 14px;
+	width: 500px;
+	box-shadow: inset 1px 1px 1px #eee;
+	border-radius: 3px;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+textarea:focus {
+	border: solid 1px #78c3e8;
+}
+
+input[type="submit"] {	
+	background-color: #a5b8da;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5b8da), color-stop(100%, #7089b3));
+  background-image: -webkit-linear-gradient(top, #a5b8da, #7089b3);
+  background-image: -moz-linear-gradient(top, #a5b8da, #7089b3);
+  background-image: -ms-linear-gradient(top, #a5b8da, #7089b3);
+  background-image: -o-linear-gradient(top, #a5b8da, #7089b3);
+  background-image: linear-gradient(top, #a5b8da, #7089b3);
+  border-top: 1px solid #758fba;
+  border-right: 1px solid #6c84ab;
+  border-bottom: 1px solid #5c6f91;
+  border-left: 1px solid #6c84ab;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  -webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+  -moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+  box-shadow: inset 0 1px 0 0 #aec3e5;
+  color: #fff;
+	font-size: 14px;
+  line-height: 1;
+  padding: 5px 25px;
+  text-align: center;
+  text-shadow: 0 -1px 1px #64799e; 
+}
+
+/*Hover*/
+input[type="submit"]:hover {
+	background-color: #9badcc;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9badcc), color-stop(100%, #687fa6));
+  background-image: -webkit-linear-gradient(top, #9badcc, #687fa6);
+  background-image: -moz-linear-gradient(top, #9badcc, #687fa6);
+  background-image: -ms-linear-gradient(top, #9badcc, #687fa6);
+  background-image: -o-linear-gradient(top, #9badcc, #687fa6);
+  background-image: linear-gradient(top, #9badcc, #687fa6);
+  border-top: 1px solid #6d86ad;
+  border-right: 1px solid #647a9e;
+  border-bottom: 1px solid #546685;
+  border-left: 1px solid #647a9e;
+  -webkit-box-shadow: inset 0 1px 0 0 #a5b9d9;
+  -moz-box-shadow: inset 0 1px 0 0 #a5b9d9;
+  box-shadow: inset 0 1px 0 0 #a5b9d9;
+  cursor: pointer;
+}
+
+/*Active*/
+input[type="submit"]:active {
+	border: 1px solid #546685;
+  -webkit-box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee;
+  -moz-box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee;
+  box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+.row {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row-item {
+	border: solid #ccc 1px;
+	padding: 12px;
+	background: #fff;
+}
+
+#band-pics li {
+	list-style: none;
+	font-size: 12px;
+}
+
+.ui-sortable {
+	margin-bottom: 10px;
+}
+
+.ui-sortable li,
+.ui-sortable tr td:first-child {
+	cursor: move;
+	background-image: url('../images/icon_move.png');
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 40px;
+}
+
+.ui-sortable .left {
+	margin-right: 20px;
+}
+
+#ui-datepicker-div {
+	font-family: Arial;
+}
+
+.success.order {
+	color: green;
+	padding: 10px 0;
+}
+
+/** TABLES ========================= **/
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: solid #aaa 1px;
+	padding: 3px 5px;
+	font-size: 12px;
+}
+
+tr.even td {
+	background: #f9f9f9;
+}
+
+tr.odd td {
+	background: #fff;
+}
+
+th {
+	background: #eee;
+}
+
+th a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+}
+
+th a:hover {
+	text-decoration: underline;
+}
+
+th.button-column {
+	width: 70px;
+}
+
+.summary {
+	font-size: 12px;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+/** ADMIN MENU ========================= **/
+
+#admin-menu {
+	background: #333;
+	font-size: 12px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-right: 100px;
+}
+
+#admin-menu li {
+	float: left;
+	list-style: none;
+}
+
+#admin-menu li li {
+	/*float: none;*/
+	width: 150px;
+}
+
+#admin-menu ul {
+	left: -999999px;
+	position: absolute;
+	background: #333;
+	width: 150px;
+	border-top: solid #444 1px;
+}
+
+#admin-menu ul ul {
+	left: -999999px;
+	position: absolute;
+	background: #333;
+	width: 150px;
+	border-top: solid #444 1px;
+	margin: -24px 0 0 150px;
+}
+
+#admin-menu ul a {
+	border-bottom: solid #444 1px;
+}
+
+#admin-menu a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 4px 7px;
+}
+
+#admin-menu a:hover {
+	color: #eee;
+}
+
+#admin-menu li:hover > ul {
+	left: auto;
+}
+
+#admin-menu li.right {
+	float: right;
+}
+
+#admin-menu li.right.first ul {
+	margin-left: -45px;
+}
+
